@@ -4,13 +4,16 @@ tasks:
     init: |
       curl -s https://laravel.build/example-app | bash
       echo "Laravel Installation completed, setting up..."
+      gp sync-done install
     command: | 
       cd example-app
       vendor/bin/sail up
 
   - name: Migrate Databases
     command: |
+      gp sync-await install
       sleep 5
+      cd example-app
       vendor/bin/sail artisan migrate
 
 ports:
