@@ -38,3 +38,11 @@ ports:
     description: Meilisearch REST API
     port: 7700
     onOpen: ignore
+  - name: Redis
+    description: Redis Caching Service
+    port: 6379
+    onOpen: ignore
+  - name: Vite
+    description: Vite Development Server
+    port: 5173
+    onOpen: ignore
