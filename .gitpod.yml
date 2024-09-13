@@ -15,7 +15,7 @@ tasks:
       sleep 10
       cd example-app
       vendor/bin/sail artisan migrate
-      gp preview $(gp url 8000)
+      gp preview $(gp url 80)
 
 ports:
   - name: Laravel Webserver
