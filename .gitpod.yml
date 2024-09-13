@@ -34,3 +34,7 @@ ports:
     description: Mailtpit Webinterface
     port: 8025
     onOpen: ignore
+  - name: Meilisearch
+    description: Meilisearch REST API
+    port: 7700
+    onOpen: ignore
