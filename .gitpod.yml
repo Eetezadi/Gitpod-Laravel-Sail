@@ -7,11 +7,11 @@ tasks:
     command: | 
       cd example-app
       vendor/bin/sail up
+
+  - name: Migrate Databases
+    command: |
       sleep 5
       vendor/bin/sail artisan migrate
-
-  - name: Setup alias
-    command: alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
 ports:
   - name: Laravel Webserver
