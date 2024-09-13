@@ -1,0 +1,18 @@
+
+tasks:
+  - name: Install Laravel Sail
+    init: |
+      curl -s https://laravel.build/example-app | bash
+      echo "Laravel Installation completed, setting up..."
+    command: | 
+      cd example-app
+      alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+      sail up
+      sleep 5
+      sail artisan migrate
+
+ports:
+  - name: Laravel Webserver
+    description: Laravel Websserver
+    port: 80
+    onOpen: open-preview
