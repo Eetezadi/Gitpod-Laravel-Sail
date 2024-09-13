@@ -20,4 +20,7 @@ ports:
   - name: Laravel Webserver
     description: Laravel Websserver
     port: 80
-    onOpen: open-preview
+    onOpen: ignore
+  - name: MySQL Database
+    port: 3306
+    onOpen: ignore
