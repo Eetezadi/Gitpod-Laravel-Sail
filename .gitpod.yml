@@ -9,12 +9,13 @@ tasks:
       cd example-app
       vendor/bin/sail up
 
-  - name: Migrate Databases
+  - name: Migrate Databases and Launch
     command: |
       gp sync-await install
       sleep 10
       cd example-app
       vendor/bin/sail artisan migrate
+      gp preview $(gp url 8000)
 
 ports:
   - name: Laravel Webserver
@@ -22,5 +23,14 @@ ports:
     port: 80
     onOpen: ignore
   - name: MySQL Database
+    description: Laravel Websserver 
     port: 3306
+    onOpen: ignore
+  - name: Mailtpit SMTP
+    description: Mailtpit Sending 
+    port: 1025
+    onOpen: ignore
+  - name: Mailtpit HTTP
+    description: Mailtpit Webinterface
+    port: 8025
     onOpen: ignore
