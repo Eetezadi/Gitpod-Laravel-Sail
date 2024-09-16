@@ -17,7 +17,7 @@ tasks:
       vendor/bin/sail artisan migrate
       gp preview $(gp url 80)
 
-  - name: Set Aliases in bash
+  - name: Set Aliases in bash (use "sail" instead of vendor/bin/sail)
     command: |
       echo "alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'" >> /home/gitpod/.bash_aliases
       source /home/gitpod/.bash_aliases
