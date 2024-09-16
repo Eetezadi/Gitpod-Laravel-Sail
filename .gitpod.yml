@@ -12,7 +12,7 @@ tasks:
   - name: Migrate Databases and Launch
     command: |
       gp sync-await install
-      sleep 15
+      sleep 10
       cd example-app
       vendor/bin/sail artisan migrate
       gp preview $(gp url 80)
