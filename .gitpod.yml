@@ -4,8 +4,8 @@ tasks:
     init: |
       curl -s https://laravel.build/example-app | bash
       echo "Laravel Installation completed, setting up..."
-      gp sync-done install
     command: | 
+      gp sync-done install
       cd example-app
       vendor/bin/sail up
 
