@@ -10,7 +10,7 @@ This is a template repo, you can create your own using this as a template. Or le
 
 * Installs Laravel Sail on Gitpod based on [Laravel installation guide](https://laravel.com/docs/11.x/installation#sail-on-linux).
 * Runs the Laravel batch script, creates a default stack for *example-app* with a default stack of *mysql*, *redis*, *meilisearch*, *mailpit* and *selenium*.
-* Starts Laravel Sail, migrates the Datebase System and is ready for development.
+* Starts Laravel Sail, migrates the database and is ready for development.
 * Adds an alias for `vendor/bin/sail` to `sail` for comfort
 
 ## Things to do
