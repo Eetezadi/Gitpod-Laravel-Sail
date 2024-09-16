@@ -13,7 +13,7 @@ tasks:
     command: |
       gp sync-await install
       echo "Sleeping a little for the sails to be set..."
-      sleep 10
+      sleep 15
       cd example-app
       vendor/bin/sail artisan migrate
       gp preview $(gp url 80)
