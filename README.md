@@ -15,6 +15,7 @@ This is a template repo, you can create your own using this as a template. Or le
 
 ## Things to do
 * On first start wait until the preview window opens...it will take a while.
+* You may change *example_app* to your app name. *example_app* is also set as ignored in *.gitignore*
 * You may adopt the `.gitpod.yml` and the bash script using a *with* query. See the [Laravel installation guide](https://laravel.com/docs/11.x/installation#sail-on-linux) for details.
 * Build your own project...hope this saved you some time :)
 
